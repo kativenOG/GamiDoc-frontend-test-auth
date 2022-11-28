@@ -186,7 +186,7 @@ export default function Home() {
 
 
   return (
-    <div className="flex flex-col justify-between h-screen ">
+    <div className="flex flex-col justify-between h-screen w-screen">
       <Snackbar
         open={snackBool}
         autoHideDuration={5000}

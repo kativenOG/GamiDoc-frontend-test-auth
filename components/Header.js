@@ -17,7 +17,7 @@ function Header() {
           loader={sanityIoImageLoader}
           src="image-src"
           alt="GamiDoc"
-          width={119}
+          width={120}
           height={20}
         />
       </Link>

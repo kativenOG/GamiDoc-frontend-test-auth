@@ -49,7 +49,6 @@ export default function CreatePDF({
   affordances,
   rules,
   aesthetics,
-  url
 }) {
   
   // Font.register({ family: 'Sen-Bold', src: font })
