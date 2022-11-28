@@ -1,29 +1,23 @@
+import Swal from "sweetalert2"
 import * as React from "react";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import IconButton from "@mui/material/IconButton";
-import { useRouter } from "next/router";
 import Link from "next/link";
 import { TextField } from "@mui/material";
+import { useRouter } from "next/router"
 
 function Dynamics({ dynamics, setDynamics }) {
-  const router = useRouter();
-  const handleChange = (event) => {
-    const {
-      target: { value },
-    } = event;
-    setDevice(
-      // On autofill we get a stringified value.
-      typeof value === "string" ? value.split(",") : value
-    );
-  };
+  const router = useRouter()
   return (
     <div className="flex flex-col w-[60em] py-4">
       <label className=" mt-4 block text-gray-700  font-bold mb-2">
-        <Link href="/documentation#technology">
-          <IconButton aria-label="Example">
-            <InfoOutlinedIcon sx={{ fontSize: 20 }} />
-          </IconButton>
-        </Link>
+        {/* STRANO CHE DYNAMICS RIPORTI A TECHNOLOGY */}
+        <IconButton aria-label="Example">
+          <InfoOutlinedIcon sx={{ fontSize: 20 }} onClick={() => {
+            Swal.fire({ title: 'Your changes have been saved in a Draft', icon: 'info' })
+            router.push("documentation#technology")
+          }} />
+        </IconButton>
         Dynamics
       </label>
 
@@ -41,7 +35,7 @@ function Dynamics({ dynamics, setDynamics }) {
       <TextField
         className={"flex w-full border  shadow-md mb-4"}
         type="text"
-        placeholder="Target user"
+        placeholder="Dynamics description"
         multiline
         rows={4}
         value={dynamics}
