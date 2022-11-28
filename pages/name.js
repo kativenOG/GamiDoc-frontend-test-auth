@@ -37,7 +37,7 @@ export default function Name() {
           <title>GamiDoc</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
-        <Header url={url} token={token} />
+        <Header/>
         <h1 className="hidden items-center justify-center font-bold text-2xl xs:flex ">
           {" "}
           ONLY DESKTOP USE <MobileOffIcon />{" "}

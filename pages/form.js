@@ -9,7 +9,6 @@ import MobileOffIcon from "@mui/icons-material/MobileOff";
 import Head from "next/head";
 import { useRouter } from "next/router"
 import axios from "axios"
-var Mutex = require("async-mutex").Mutex
 
 // Tabs
 import { Tab } from "@headlessui/react";
@@ -183,20 +182,11 @@ export default function Home() {
   const { query } = useRouter()
   const [name, setName] = useState(query.name)
   const [description, setDescription] = useState(query.description)
+  const [snackBool,setSnackBool] = useState(false)
 
 
   return (
     <div className="flex flex-col justify-between h-screen ">
-      <Snackbar
-        open={allertBool}
-        autoHideDuration={5000}
-        onClose={() => { setAllertBool(false) }}
-      >
-        <Alert severity="info" >
-          Paper saved as a Draft
-        </Alert>
-      </Snackbar>
-
       <Snackbar
         open={snackBool}
         autoHideDuration={5000}
@@ -213,7 +203,7 @@ export default function Home() {
         <title>GamiDoc</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Header url={url} token={token} />
+      <Header/>
       <h1 className="hidden items-center justify-center font-bold text-2xl xs:flex ">
         {" "}
         ONLY DESKTOP USE <MobileOffIcon />{" "}
@@ -458,9 +448,6 @@ export default function Home() {
               
               // Indice e token auth 
               selectedIndex={selectedIndex}
-              token={token}
-              imgUrl={imgUrl}
-              url={url}
 
               // Dati paper presi come props  
               name={name}
@@ -491,7 +478,6 @@ export default function Home() {
               affordances={affordances}
               rules={rules}
               aesthetics={aesthetics}
-              draftID={draftID}
             />
 
             <div className="grow flex-row flex gap-5 items-center justify-end">

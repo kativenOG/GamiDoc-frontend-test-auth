@@ -17,7 +17,6 @@ export default function Aim({
   aimDescription,
   setAimDescription,
   selectObj2, // Aimo
-  saveDraft
 }) {
   const router = useRouter();
   return (
@@ -26,7 +25,6 @@ export default function Aim({
         <IconButton aria-label="Example">
           <InfoOutlinedIcon sx={{ fontSize: 20 }} onClick={() => {
             Swal.fire({ title: 'Your changes have been saved in a Draft', icon: 'info' })
-            saveDraft()
             router.push("documentation#aim")
           }} />
         </IconButton>
