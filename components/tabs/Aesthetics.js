@@ -37,18 +37,24 @@ function Aesthetics({
         Aesthetics
       </label>
       <h2 className="w-[60em] mt-4 block text-gray-700  mb-2 ">
-        Lastly, the aesthetics component contains all the information related to
-        the aesthetic part of the software. Aesthetics has a direct relationship
-        with the users’ experience: the more beautiful the aesthetic part is,
-        the more interesting and compelling the users will find it. Hence, this
-        leads to better levels of motivation and engagement. The rationale
-        behind this feature comes from several example of game design documents
-        we have explored during the design of this tool. Despite this component
-        is highly regarded when making video games, it seems to be completely
-        neglected when analyzing serious games and gamified solutions. In this
-        part, researchers and practitioners have to report decisions and
-        examples related to the aesthetic part and decisions on the user
-        interface.
+        {/* Lastly, the aesthetics component contains all the information related to */}
+        {/* the aesthetic part of the software. Aesthetics has a direct relationship */}
+        {/* with the users’ experience: the more beautiful the aesthetic part is, */}
+        {/* the more interesting and compelling the users will find it. Hence, this */}
+        {/* leads to better levels of motivation and engagement. The rationale */}
+        {/* behind this feature comes from several example of game design documents */}
+        {/* we have explored during the design of this tool. Despite this component */}
+        {/* is highly regarded when making video games, it seems to be completely */}
+        {/* neglected when analyzing serious games and gamified solutions. In this */}
+        {/* part, researchers and practitioners have to report decisions and */}
+        {/* examples related to the aesthetic part and decisions on the user */}
+        {/* interface. */}
+        The aesthetics component contains all the information related to the aesthetic part of the software. 
+        Aesthetics has a direct relationship with the users’ experience: the more beautiful the aesthetic part is, the more interesting and compelling the users will find it. 
+        Hence, this leads to better levels of motivation and engagement (Schell, 2008; Walk, Gorlich, & Barrett, 2017). 
+        The rationale behind this feature comes from several examples of game design documents we have explored during the design of this tool. 
+        Despite this component being highly regarded when making video games, it seems to be completely neglected when analyzing serious games and gamified solutions (Suh, Cheung, Ahuja, & Wagner, 2017). 
+        In this part, researchers and practitioners have to report decisions and examples related to the aesthetic part and decisions on the user interface.
       </h2>
       <label className="block text-gray-700   font-bold mb-2" />
       <TextField

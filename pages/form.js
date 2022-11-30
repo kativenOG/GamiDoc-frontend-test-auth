@@ -216,7 +216,7 @@ export default function Home() {
               selectedIndex={selectedIndex}
               onChange={setSelectedIndex}
             >
-              <Tab.List className="flex flex-row gap-16 items-center ">
+              <Tab.List className="flex flex-row sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 2xl:gap-16 items-center ">
                 <Tab as={Fragment}>
                   {({ selected }) => (
                     <div
@@ -337,7 +337,6 @@ export default function Home() {
               </Tab.List>
               <Tab.Panels>
                 <Tab.Panel>
-                                    {/* NEW CONTEXT */}
                   <div className="flex flex-col py-4 w-[60em]">
                     <Domain
                       domain={domain}

@@ -32,7 +32,7 @@ export default function CreatePDF({
   aimDescription,
   targetAge,
   targetUser,
-  targetCategory,
+  // targetCategory,
 
   device,
   deviceDescription,
@@ -220,13 +220,13 @@ export default function CreatePDF({
             <Text style={{ fontFamily: "Sen-Bold", fontSize: 14 }}>Domain: </Text> This gamified solution will be used in the <Text style={{ fontFamily: "Roboto-Italic", fontSize: 13 }}>{domain}</Text> domain. Specifically, <Text style={{ fontFamily: "Roboto-Italic", fontSize: 12 }}>{domainDescription} </Text>
             <Br /><Br />
             {/* Aim */}
-            <Text style={{ fontFamily: "Sen-Bold", fontSize: 14 }}>Aim: </Text> This gamified solution will be used with a <Text style={{ fontFamily: "Roboto-Italic", fontSize: 13 }}>{aim} </Text> purpouse. That is INSERIRE DESCRIZIONE DELLO SCOPO IN RELAZIONE ALLA SCELTA. Specifically, <Text style={{ fontFamily: "Roboto-Italic", fontSize: 12 }}>{aimDescription} </Text>.
+            <Text style={{ fontFamily: "Sen-Bold", fontSize: 14 }}>Aim: </Text> This gamified solution will be used with a <Text style={{ fontFamily: "Roboto-Italic", fontSize: 13 }}>{aim} </Text> purpouse.{/*  That is INSERIRE DESCRIZIONE DELLO SCOPO IN RELAZIONE ALLA SCELTA. */} Specifically, <Text style={{ fontFamily: "Roboto-Italic", fontSize: 12 }}>{aimDescription} </Text>.
             < Br /> <Br />
             {/* User */}
-            <Text style={{ fontFamily: "Sen-Bold", fontSize: 14 }}>Target User: </Text> This gamified solution will be used with <Text style={{ fontFamily: "Roboto-Italic", fontSize: 13 }}>{targetAge}</Text> years-old <Text style={{ fontFamily: "Roboto-Italic", fontSize: 13 }}> {targetCategory}</Text>. {(targetUser != "") ? ("Specifically, " + <Text style={{ fontFamily: "Roboto-Italic", fontSize: 12 }}> {targetUser}</Text>) : ""}
+            <Text style={{ fontFamily: "Sen-Bold", fontSize: 14 }}>Target User: </Text> This gamified solution will be used with <Text style={{ fontFamily: "Roboto-Italic", fontSize: 13 }}>{targetAge}</Text> years-old {/* <Text style={{ fontFamily: "Roboto-Italic", fontSize: 13 }}> {targetCategory}</Text> */}. {(targetUser != "") ? ("Specifically, " + <Text style={{ fontFamily: "Roboto-Italic", fontSize: 12 }}> {targetUser}</Text>) : ""}
             <Br /><Br />
             {/* Behaviors */}
-            <Text style={{ fontFamily: "Sen-Bold", fontSize: 14 }}>Encouraged Behaviors: </Text> This gamified solution will encourage the following behaviors among users: <Text style={{ fontFamily: "Roboto-Italic", fontSize: 13 }}>{behavior}</Text>. In the meantime, it should prevent the following behaviors: <Text style={{ fontFamily: "Roboto-Italic", fontSize: 12 }}>{discBehavior}</Text>.
+           <Text style={{ fontFamily: "Sen-Bold", fontSize: 14 }}>Encouraged Behaviors: </Text> This gamified solution will encourage the following behaviors among users: <Text style={{ fontFamily: "Roboto-Italic", fontSize: 13 }}>{behavior}</Text>. In the meantime, it should prevent the following behaviors: <Text style={{ fontFamily: "Roboto-Italic", fontSize: 12 }}>{discBehavior}</Text>.
             <Br /><Br />
           </Text>
         </View>
@@ -319,7 +319,6 @@ export default function CreatePDF({
           <Text style={styles.h2}>
             The aesthetic part is of crucial importance, since it has a direct relationship with the users’ experience: the more beautiful the aesthetic part is, the more interesting and compelling the users will find it. In the developed gamified solution <Text style={{ fontFamily: "Roboto-Italic", fontSize: 12 }}> {aesthetics} </Text> will be used.
             <Br />
-            IMMAGINI
           </Text>
         </View>
       </Page>

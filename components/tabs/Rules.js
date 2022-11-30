@@ -16,24 +16,25 @@ function Rules({
       <label className="mt-4 block text-gray-700  font-bold mb-2">
         <IconButton aria-label="Example">
           <InfoOutlinedIcon sx={{ fontSize: 20 }} onClick={() => {
-            Swal.fire({ title: 'Your changes have been saved in a Draft', icon: 'info' })
+            // Swal.fire({ title: 'Your changes have been saved in a Draft', icon: 'info' })
             router.push("documentation#gamerules")
           }} />
         </IconButton>
         Rules
       </label>
       <h2 className="w-[60em] mt-4 block text-gray-700  mb-2 ">
-        Game behavior component refers to the clarification of the game rules,
-        game mechanics, game progression, and its graphical representation
-        through game loop diagrams. The game rules determine, just like in any
-        other game, how the game inside the application is played. The mechanics
-        describe what happens when a player does something in the game in order
-        to achieve the game&apos;s goal. Progression is defined through a subset
-        of game mechanics that describe how the game overall progresses like,
-        for example, player levels advancing and, thereby, unlocking new things
-        for the game.
-        <br />
-        <br /> The final output consists of a list of the game rules and their
+        {/* Game behavior component refers to the clarification of the game rules, */}
+        {/* game mechanics, game progression, and its graphical representation */}
+        {/* through game loop diagrams. The game rules determine, just like in any */}
+        {/* other game, how the game inside the application is played. The mechanics */}
+        {/* describe what happens when a player does something in the game in order */}
+        {/* to achieve the game&apos;s goal. Progression is defined through a subset */}
+        {/* of game mechanics that describe how the game overall progresses like, */}
+        {/* for example, player levels advancing and, thereby, unlocking new things */}
+        {/* for the game. */}
+        {/* <br /> */}
+        {/* <br />  */}
+        The final output consists of a list of the game rules and their
         links, in which mechanics and progression are specified. Moreover, this
         part is linked to the dynamics subcomponent, which provides a list of
         possible dynamics that can emerge runtime or after a certain number of

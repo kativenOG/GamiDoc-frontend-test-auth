@@ -21,14 +21,12 @@ function Personalization({ personalization, setPersonalization }) {
         </IconButton>
         Personalization
       </label>
-
       <h2 className="w-[60em] mt-4 block text-gray-700  mb-2 ">
-        Several solutions in the gamification field suggest a personalization or
-        adaptation of the gamified solutions according to several individual
-        differences and preferences, such as the player type, personality
-        traits, motivation and goal (Fortes Tondello et al., 2018), and so
-        forth. For this, we decided to add a part related to the selection of a
-        personalization modality and a possible adaptation feature.
+        Several solutions in the gamification field suggest a personalization or adaptation 
+        of the gamified solutions according to several individual differences and preferences (Hallifax, Lavoúe, & Serna, 2020;
+        Oliveira et al., 2022), such as the player type (Bartle, 1996; Ferro, Walz, and Greuter, 2013; Tondello et al., 2016), 
+        personality traits (Denden, Tlili, Essalmi, & Jemni, 2017), motivation and goal (Tondello et al., 2018), and so forth. 
+        For this, we decided to add a part related to the selection of a personalization modality and a possible adaptation feature.
       </h2>
       <TextField
         className={"flex w-full border  shadow-md mb-4"}

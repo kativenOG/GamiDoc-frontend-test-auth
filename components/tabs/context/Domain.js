@@ -23,27 +23,23 @@ export default function Domain({
 
   return (
     <>
-      <h2 className="w-[60em] mt-4 block text-gray-700  mb-2 ">
-        The context component allows researchers and practitioners to design the
-        gamification system keeping track of contextual information. This
-        section provides four subcomponents to be considered: application
-        domain, aim of the software, definition of target users, and the
-        selection of encouraged and avoided behaviors
+      <h2 className="w-[60em] mt-4 block text-gray-700  mb-2 font-semibold">
+        The context component allows researchers and practitioners to design the gamification system keeping track of contextual information. 
+        This section provides four subcomponents to be considered: application domain, aim of the software, definition of target users, and the selection of encouraged and avoided behaviors.
       </h2>
 
-      <label className=" mt-4 block text-gray-700  font-bold mb-2">
+      <label className=" mt-4 block text-gray-700  font-bold ">
         <IconButton aria-label="Example">
           <InfoOutlinedIcon sx={{ fontSize: 20 }} onClick={() => {
-            Swal.fire({ title: 'Your changes have been saved in a Draft', icon: 'info' })
+            // Swal.fire({ title: 'Your changes have been saved in a Draft', icon: 'info' })
             router.push("documentation#domain")
           }} />
         </IconButton>
         Domain
       </label>
       <h2 className=" mt-4  block text-gray-700  mb-2 ">
-        The domain component collects the application domain in which the
-        gamified solution will be used. For the taxonomy of possible domains, we
-        chose the list included in Koivisto & Hamari, 2019:
+        The domain component collects the application domain in which the gamified solution will be used.
+        For the taxonomy of possible domains, we chose the list included in Koivisto & Hamari, 2019.
       </h2>
       <FormControl>
         <InputLabel>Domain</InputLabel>

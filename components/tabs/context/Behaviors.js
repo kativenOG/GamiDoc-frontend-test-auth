@@ -31,10 +31,15 @@ export default function Behaviors({
         Encouraged Behaviors
       </label>
       <h2 className="w-[60em] mt-4 block text-gray-700  mb-2 ">
-        One of the main aspects of gamification is to modify a behavioral
-        pattern. The encouraged and avoided behaviors component collects a clear
-        definition of what are the behaviors that have to be encouraged and
-        which ones need to be avoided.
+        Game behavior component refers to the clarification of the <bold className="font-bold">game rules</bold>, <bold className="font-bold">game mechanics</bold>, <bold className="font-bold">game progression</bold>. 
+        The game rules determine, just like in any other game, how the game inside the application is played. The mechanics describe what happens when a player does something in the game in order to achieve the game’s goal. Progression is defined through a subset of game mechanics that describe how the game overall progresses like, for example, player levels advancing and, thereby, unlocking new things for the game. The final output consists of a list of the game rules, in which mechanics and progression are specified. 
+        Moreover, this part is linked to the dynamics subcomponent, which provides a list of possible dynamics that can emerge runtime or after a certain number of runs. 
+        This allows researchers and practitioners to (1) monitor the interaction between users
+        and mechanics, and (2) to modify the design in order to avoid inadequate interactions and behaviors.
+        {/* One of the main aspects of gamification is to modify a behavioral */}
+        {/* pattern. The encouraged and avoided behaviors component collects a clear */}
+        {/* definition of what are the behaviors that have to be encouraged and */}
+        {/* which ones need to be avoided. */}
       </h2>
       <label className="block text-gray-700   font-bold mb-2" />
 

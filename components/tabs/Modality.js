@@ -33,18 +33,11 @@ export default function Modality({
       </label>
 
       <h2 className="mt-4 block text-gray-700  mb-2 ">
-        This component is dedicated to the definition of the main modality
-        included in the gamification software. Despite the scarcity of evidence
-        on cooperative gamification, the few results in literature show
-        differences in cooperative and competitive modalities of gamification
-        and that different game elements support the different modalities. In
-        the identification of different gamification modalities, we decided to
-        follow the distinction made by Morschheuser and colleagues between (1)
-        individual, (2) cooperative, (3) competitive, and (4)
-        cooperative-competitive gamification features, with the last one
-        referring to those elements which support users’ cooperation with their
-        ingroup (i.e., team mates), and competition with the outgroup (i.e.,
-        team competition).
+        This component is dedicated to the definition of the main modality included in the gamification software. Despite the scarcity of evidence on cooperative gamification, the few results in the literature show differences in cooperative and competitive modalities of gamification and that different game elements support the different modalities (Chen & Pu, 2014; Goh & Lee, 2011; T. Y. Lee et al., 2013; Massung, Coyle,
+        Cater, Jay, & Preist, 2013; Mekler, Br ̈uhlmann, Opwis, & Tuch, 2013; Morschheuser, Maedche, & Walter, 2017). In the identification of different gamification modalities, we decided to follow the distinction made by Morschheuser and colleagues (Morschheuser, Maedche, & Walter, 2017) between <bold>(1) individual</bold>, <bold>(2) cooperative</bold>, <bold>(3) competitive</bold>, and <bold>(4) cooperative-competitive</bold> gamification features (see also Liu, Li, & Santhanam (2013)), 
+        with the last one referring to those elements which support users’ cooperation with their ingroup (i.e., team mates), and competition with the outgroup (i.e., team competition). 
+        Therefore, based on the main modality included in the design, each gamified software will be divided into the same categories. 
+        Our definition of gamification modality does not include emergent behaviors (i.e., emergent cooperation between opponents to hinder the first user on the leaderboard) or behaviors to be encouraged outside of the software (i.e., cooperation as behavior to be encouraged outside of the software) since it does not lead to a univocal modality (i.e., cooperation in real life can be reached through cooperation or competition as well in the gamified software).
       </h2>
       <div className="mb-5">
         <FormControl fullWidth>

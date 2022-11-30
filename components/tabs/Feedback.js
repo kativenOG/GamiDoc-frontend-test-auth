@@ -37,17 +37,14 @@ export default function Feedback({
         Feedback
       </label>
       <h2 className=" mt-4 block text-gray-700  mb-2 ">
-        Feedback component refers to the selection of the kind of feedback used
-        in the software. Since there are different ways to provide feedback,
-        mainly according to the content and timing, and since feedback work
-        differently across certain domains and users (Hassan et al., 2019), this
-        section is needed to specify the content and the timing of used
-        feedback. Hence, GamiDOC provides a choice according to the timing
-        (immediate feedback, late feedback, and personalized feedback), and a
-        choice for the content (corrective feedback, explanatory feedback,
-        reporting feedback, and personalized feedback).
+        Feedback component refers to the selection of the kind of feedback used in the software. 
+        Since there are different ways to provide feedback, mainly according to the content and timing, 
+        and since feedback works differently across certain domains and users (Hassan et al., 2019), 
+        this section is needed to specify the content and the timing of used feedback. 
+        The selected taxonomy comes from (Bassanelli & Bucchiarone, n.d.). 
+        Hence, GamiDOC provides a choice according to the <bold className="font-bold">timing</bold> (<bold className="font-bold">immediate feedback</bold>, and <bold className="font-bold">late feedback</bold>, <bold className="font-bold">personalized feedback </bold>timing), 
+        and a choice for the <bold className="font-bold">content</bold> (<bold className="font-bold">corrective feedback</bold>, <bold className="font-bold">explanatory feedback</bold>, <bold className="font-bold">reporting feedback</bold>, and <bold className="font-bold">personalized feedback</bold> content).
       </h2>
-
       <FormControl className="">
         <InputLabel>Timing</InputLabel>
         <Select

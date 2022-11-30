@@ -82,8 +82,8 @@ export default function Name() {
             }
             className={
               name === ""
-                ? "py-4 inline-block px-8 xs:px-6 xs:py-3 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md   focus:shadow-lg focus:outline-none focus:ring-0 bg-gray-500  transition duration-150 ease-in-out cursor-not-allowed"
-                : "py-4 inline-block px-8 bg-yellow-gamy xs:px-6 xs:py-3 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md  hover:bg-yellow-600 hover:shadow-lg focus:bg-yellow-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-400 active:shadow-lg transition duration-150 ease-in-out"
+                ? "mb-3 py-4 inline-block px-8 xs:px-6 xs:py-3 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md   focus:shadow-lg focus:outline-none focus:ring-0 bg-gray-500  transition duration-150 ease-in-out cursor-not-allowed"
+                : "mb-3 py-4 inline-block px-8 bg-yellow-gamy xs:px-6 xs:py-3 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md  hover:bg-yellow-600 hover:shadow-lg focus:bg-yellow-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-400 active:shadow-lg transition duration-150 ease-in-out"
             }
           >
             Form

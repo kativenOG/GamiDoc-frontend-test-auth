@@ -16,10 +16,10 @@ export default function Targets({
   setTargetAge,
   targetUser,
   setTargetUser,
-  targetCategory,
-  setTargetCategory,
+  // targetCategory,
+  // setTargetCategory,
   selectObj3, // Target categories
-  selectObj4, // Categories selection
+  // selectObj4, // Categories selection
 }) {
   const router = useRouter();
 
@@ -43,9 +43,9 @@ export default function Targets({
         Target user
       </label>
       <h2 className="w-[60em] mt-4 block text-gray-700  mb-2 ">
-        Several documents in the gamification field suggest that users &apos;
-        individual differences and preferences are crucial for the success of
-        gamified solution.
+        Several documents in the gamification field suggest that users’ individual differences and preferences are crucial for the success of gamified solutions (B. Kim, 2015; Koivisto & Hamari, 2019; Tondello et al., 2016; Zahedi et al., 2021). The existing taxonomies take into account the personality traits or the possible user type. Thus, we decided to develop our taxonomy, following the possible users’ category. The target
+        users component collects all the relevant data related to the users who will be involved in the use of the software (<bold className="font-bold">category</bold> and <bold className="font-bold">age ranges</bold>).
+        The difficulty in the development of a possible exhaustive taxonomy could lead to explorative applications of gamified solutions for studying new categories.
       </h2>
       <div className="my-5">
         <FormControl fullWidth>
@@ -65,21 +65,22 @@ export default function Targets({
           </Select>
         </FormControl>
       </div>
-      <FormControl>
-        <InputLabel>Category</InputLabel>
-        <Select
-          className="relative w-full shadow-md "
-          value={targetCategory}
-          onChange={(event) => { setTargetCategory(event.target.value) }}
-          input={<OutlinedInput label="Category" />}
-        >
-          {selectObj4.map((name) => (
-            <MenuItem key={name} value={name}>
-              {name}
-            </MenuItem>
-          ))}
-        </Select>
-      </FormControl>
+
+      {/* <FormControl> */}
+      {/*   <InputLabel>Category</InputLabel> */}
+      {/*   <Select */}
+      {/*     className="relative w-full shadow-md " */}
+      {/*     value={targetCategory} */}
+      {/*     onChange={(event) => { setTargetCategory(event.target.value) }} */}
+      {/*     input={<OutlinedInput label="Category" />} */}
+      {/*   > */}
+      {/*     {selectObj4.map((name) => ( */}
+      {/*       <MenuItem key={name} value={name}> */}
+      {/*         {name} */}
+      {/*       </MenuItem> */}
+      {/*     ))} */}
+      {/*   </Select> */}
+      {/* </FormControl> */}
 
       <TextField
         className="w-full border  shadow-md top-5"
