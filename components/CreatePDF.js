@@ -223,7 +223,7 @@ export default function CreatePDF({
             <Text style={{ fontFamily: "Sen-Bold", fontSize: 14 }}>Aim: </Text> This gamified solution will be used with a <Text style={{ fontFamily: "Roboto-Italic", fontSize: 13 }}>{aim} </Text> purpouse.{/*  That is INSERIRE DESCRIZIONE DELLO SCOPO IN RELAZIONE ALLA SCELTA. */} Specifically, <Text style={{ fontFamily: "Roboto-Italic", fontSize: 13 }}>{aimDescription} </Text>.
             < Br /> <Br />
             {/* User */}
-            <Text style={{ fontFamily: "Sen-Bold", fontSize: 14 }}>Target User: </Text> This gamified solution will be used with <Text style={{ fontFamily: "Roboto-Italic", fontSize: 13 }}> {targetAge.map(element => {return <Text style={{ fontFamily: "Roboto-Italic", fontSize: 14 }}> {element},</Text> })}
+            <Text style={{ fontFamily: "Sen-Bold", fontSize: 14 }}>Target User: </Text> This gamified solution will be used with <Text style={{ fontFamily: "Roboto-Italic", fontSize: 13 }}> {targetAge.map(element => {return <Text key={element.id} style={{ fontFamily: "Roboto-Italic", fontSize: 14 }}> {element},</Text> })}
             {()=>{ // NON VA BRUTTANEM, apprezzo l'impegno 
                 console.log("Dentro")
                 numbers = [];
