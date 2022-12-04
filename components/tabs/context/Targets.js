@@ -45,7 +45,7 @@ export default function Targets({
       </label>
       <h2 className="w-[60em] mt-4 block text-gray-700  ">
         Several documents in the gamification field suggest that users’ individual differences and preferences are crucial for the success of gamified solutions <span className="underline text-blue-400">(B. Kim, 2015; Koivisto & Hamari, 2019; Tondello et al., 2016; Zahedi et al., 2021)</span>. The existing taxonomies take into account the personality traits or the possible user type. Thus, we decided to develop our taxonomy, following the possible users’ category. The target
-        users component collects all the relevant data related to the users who will be involved in the use of the software (<bold className="font-bold">category</bold> and <bold className="font-bold">age ranges</bold>).
+        users component collects all the relevant data related to the users who will be involved in the use of the software (<bold className="font-bold">category</bold> and <bold className="font-bold">age ranges</bold>)
         The difficulty in the development of a possible exhaustive taxonomy could lead to explorative applications of gamified solutions for studying new categories.
       </h2>
       <div className="my-5">
