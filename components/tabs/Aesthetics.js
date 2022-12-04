@@ -51,9 +51,9 @@ function Aesthetics({
         {/* interface. */}
         The aesthetics component contains all the information related to the aesthetic part of the software. 
         Aesthetics has a direct relationship with the users’ experience: the more beautiful the aesthetic part is, the more interesting and compelling the users will find it. 
-        Hence, this leads to better levels of motivation and engagement (Schell, 2008; Walk, Gorlich, & Barrett, 2017). 
+        Hence, this leads to better levels of motivation and engagement <span className="underline text-blue-400">(Schell, 2008; Walk, Gorlich, & Barrett, 2017)</span>. 
         The rationale behind this feature comes from several examples of game design documents we have explored during the design of this tool. 
-        Despite this component being highly regarded when making video games, it seems to be completely neglected when analyzing serious games and gamified solutions (Suh, Cheung, Ahuja, & Wagner, 2017). 
+        Despite this component being highly regarded when making video games, it seems to be completely neglected when analyzing serious games and gamified solutions <span className="underline text-blue-400">(Suh, Cheung, Ahuja, & Wagner, 2017)</span>. 
         In this part, researchers and practitioners have to report decisions and examples related to the aesthetic part and decisions on the user interface.
       </h2>
       <label className="block text-gray-700   font-bold mb-2" />

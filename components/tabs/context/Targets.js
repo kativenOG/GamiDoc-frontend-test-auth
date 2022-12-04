@@ -27,8 +27,9 @@ export default function Targets({
     const {
       target: { value },
     } = event;
-    setTargetAge(
-      typeof value === "string" ? value.split(",") : value);
+    // console.log(value)
+    setTargetAge(value)
+    // typeof value === "string" ? value.split(",") : value);
   };
 
   return (
@@ -42,8 +43,8 @@ export default function Targets({
         </IconButton>
         Target user
       </label>
-      <h2 className="w-[60em] mt-4 block text-gray-700  mb-2 ">
-        Several documents in the gamification field suggest that users’ individual differences and preferences are crucial for the success of gamified solutions (B. Kim, 2015; Koivisto & Hamari, 2019; Tondello et al., 2016; Zahedi et al., 2021). The existing taxonomies take into account the personality traits or the possible user type. Thus, we decided to develop our taxonomy, following the possible users’ category. The target
+      <h2 className="w-[60em] mt-4 block text-gray-700  ">
+        Several documents in the gamification field suggest that users’ individual differences and preferences are crucial for the success of gamified solutions <span className="underline text-blue-400">(B. Kim, 2015; Koivisto & Hamari, 2019; Tondello et al., 2016; Zahedi et al., 2021)</span>. The existing taxonomies take into account the personality traits or the possible user type. Thus, we decided to develop our taxonomy, following the possible users’ category. The target
         users component collects all the relevant data related to the users who will be involved in the use of the software (<bold className="font-bold">category</bold> and <bold className="font-bold">age ranges</bold>).
         The difficulty in the development of a possible exhaustive taxonomy could lead to explorative applications of gamified solutions for studying new categories.
       </h2>
@@ -65,23 +66,6 @@ export default function Targets({
           </Select>
         </FormControl>
       </div>
-
-      {/* <FormControl> */}
-      {/*   <InputLabel>Category</InputLabel> */}
-      {/*   <Select */}
-      {/*     className="relative w-full shadow-md " */}
-      {/*     value={targetCategory} */}
-      {/*     onChange={(event) => { setTargetCategory(event.target.value) }} */}
-      {/*     input={<OutlinedInput label="Category" />} */}
-      {/*   > */}
-      {/*     {selectObj4.map((name) => ( */}
-      {/*       <MenuItem key={name} value={name}> */}
-      {/*         {name} */}
-      {/*       </MenuItem> */}
-      {/*     ))} */}
-      {/*   </Select> */}
-      {/* </FormControl> */}
-
       <TextField
         className="w-full border  shadow-md top-5"
         id="username"

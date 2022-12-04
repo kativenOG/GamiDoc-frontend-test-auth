@@ -31,14 +31,20 @@ function Device({
       </label>
 
       <h2 className="w-[60em] mt-4 block text-gray-700  mb-2 ">
-        The technology component takes into account hardware, software, input
-        and output devices, any other technological component involved in the
-        software development, and the kind of device in which the software will
-        be used. Since there are several different devices that can be used for
-        gamified solutions, it is important to comprehend if the selected
-        choices could fit the context information (i.e. device type, game
-        engine, etc), and then if the selected gamified elements are optimal for
-        the selected device.
+        {/* The technology component takes into account hardware, software, input */}
+        {/* and output devices, any other technological component involved in the */}
+        {/* software development, and the kind of device in which the software will */}
+        {/* be used. Since there are several different devices that can be used for */}
+        {/* gamified solutions, it is important to comprehend if the selected */}
+        {/* choices could fit the context information (i.e. device type, game */}
+        {/* engine, etc), and then if the selected gamified elements are optimal for */}
+        {/* the selected device. */}
+        The technology component takes into account hardware, software, input and output devices, any other technological components involved in the software development, 
+        and the kind of device in which the software will be used. Since there are several different devices that can be used for gamified solutions, 
+        and different game elements fit in in a different way according to the device used <span className="underline text-blue-400">(Su, Zou, Xie, and Wang, 2021)</span>, and different interactions with games can change the user experience 
+        <span className="underline text-blue-400">(McEwan, Johnson, Wyeth, and Blackler, 2012)</span>, it is important to comprehend if the selected choices could fit the context information (i.e. device type, game engine, etc), 
+        and then if the selected gamified elements are optimal for the selected device. This component allows the selection of a choice within:
+        <bold className="font-bold">(1) mobile, (2) tablet, (3) computer/laptop, (4) head-mounted display, (5) augmented reality</bold> and <bold className="font-bold">(6) real life</bold>.
       </h2>
       <div className="mb-5">
         <FormControl fullWidth>

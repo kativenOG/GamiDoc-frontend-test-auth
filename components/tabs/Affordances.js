@@ -69,7 +69,7 @@ function Affordances({
           in the software. The previous components are useful to better understand
           which gamification elements fit in the proper way. The selected taxonomy
           of possible gamified elements comes from the work of Toda and colleagues
-          (Toda, Klock, et al., 2019; Toda, Oliveira, et al., 2019): <br />
+          <span className="underline text-blue-400">(Toda, Klock, et al., 2019; Toda, Oliveira, et al., 2019)</span>: <br />
           <br />
           • <bold className="font-bold">Performance</bold>: Acknowledgement, Level, Progression, Points, Stats; <br />
           • <bold className="font-bold">Ecological</bold>: Chance, Imposed choice, Economy, Rarity, Time Pressure; <br />
