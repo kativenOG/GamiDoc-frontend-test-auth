@@ -166,8 +166,6 @@ export default function documentation() {
           </div>{" "}
           <div id="gamebehavior">
             <h1 className="font-bold">3.1 Game behavior </h1>
-            {/* The game behavior section contains the description of game rules, */}
-            {/* game mechanics, game progression, and the game loop.  */}
             Game behavior component refers to the clarification of the <bold className="font-bold">game rules, game mechanics, game progression</bold>. The game rules determine, just like in any other game, how the game inside the application is played. The mechanics describe what happens when a player does something in the game in order to achieve the game’s goal. Progression is defined through a subset of game mechanics that describe how the game overall progresses like, for example, player levels advancing and, thereby, unlocking new things for the game. The final output consists of a list of the game rules, in which mechanics and progression are specified. Moreover, this part is linked to the dynamics
             subcomponent, which provides a list of possible dynamics that can emerge runtime or after a certain number of runs. This allows researchers and practitioners to (1) monitor the interaction between users
             and mechanics, and (2) to modify the design in order to avoid inadequate interactions and behaviors.
@@ -283,7 +281,7 @@ export default function documentation() {
             {/* onboarding, adaptive difficulty, warnings, virtual pets, game */}
             {/* slogan, funny movies, virtual object as augmented reality, */}
             {/* suggestions. <br /> <br /> */}
-            <h1 className="font-bold">3.4 Gamification Elements </h1>
+            <h1 className="font-bold">3.2 Gamification Elements </h1>
               Gamification elements component shows a list of gamified elements used
               in the software. The previous components are useful to better understand
               which gamification elements fit in the proper way. The selected taxonomy
@@ -314,7 +312,7 @@ export default function documentation() {
             and a choice for the <bold className="font-bold">content</bold> (<bold className="font-bold">corrective feedback</bold>, <bold className="font-bold">explanatory feedback</bold>, <bold className="font-bold">reporting feedback</bold>, and <bold className="font-bold">personalized feedback</bold> content).
             <br/><br/>
           </div>{" "}
-          <div>
+          <div id="dynamics">
             <h1 className="font-bold">4 Dynamics</h1>
             {/* Dynamics With regards to Game Dynamics, there is not a unique */}
             {/* definition. Some authors suggest that game dynamics are interactions */}
@@ -364,7 +362,7 @@ export default function documentation() {
             For this, we decided to add a part related to the selection of a personalization modality and a possible adaptation feature.
             <br /> <br />
           </div>{" "}
-          <div id="game">
+          <div id="aesthetics">
             <h1 className="font-bold">6 Aesthetics</h1>
             {/* Aesthetics The aesthetics component is a crucial aspect in designing */}
             {/* gamified software: aesthetics has a direct relationship with the */}
@@ -380,6 +378,37 @@ export default function documentation() {
             Despite this component being highly regarded when making video games, it seems to be completely neglected when analyzing serious games and gamified solutions <span className="underline text-blue-400">(Suh, Cheung, Ahuja, & Wagner, 2017)</span>. 
             In this part, researchers and practitioners have to report decisions and examples related to the aesthetic part and decisions on the user interface.
           </div>
+          {/* <div className="m-5 p-3 "> */}
+          {/*   <h1 className="font-bold">Bibliography</h1> */}
+          {/*   <ol> */}
+          {/*       <li>Koivisto, J., & Hamari, J. (2019). The rise of motivational information systems: A review of gamification research. International Journal of Information Management, 45, 191-210. </li> */}
+          {/*       <li>Fortes Tondello, G., Premsukh, H., & Nacke, L. (2018, January). A theory of gamification principles through goal-setting theory. Hawaii International Conference on System Sciences. </li> */}
+          {/*       <li>Kim, B. (2015). Designing gamification in the right way. Library technology reports, 51(2), 29–35. </li> */}
+          {/*       <li>Tondello, G. F., Wehbe, R. R., Diamond, L., Busch, M., Marczewski, A., & Nacke, L. E. (2016, October). The gamification user types hexad scale. In Proceedings of the 2016 annual symposium on computer-human interaction in play (pp. 229-243). </li> */}
+          {/*       <li>Zahedi, L., Batten, J., Ross, M., Potvin, G., Damas, S., Clarke, P., & Davis, D. (2021). Gamification in education: A mixed-methods study of gender on computer science students’ academic performance and identity development. Journal of Computing in Higher Education, 33(2), 441-474. </li> */}
+          {/*       <li>Su, F., Zou, D., Xie, H., & Wang, F. L. (2021). A comparative review of mobile and non-mobile games for language learning. SAGE Open, 11(4), 21582440211067247.</li> */}
+          {/*       <li>McEwan, M., Johnson, D., Wyeth, P., & Blackler, A. (2012, July). Videogame control device impact on the play experience. In Proceedings of the 8th australasian conference on interactive entertainment: Playing the system (pp. 1-3).</li> */}
+          {/*       <li>Chen, Y., & Pu, P. (2014). Healthytogether: exploring social incentives for mobile fitness applications. In Proceedings of the second international symposium of chinese chi (pp. 25–34). </li> */}
+          {/*       <li>Goh, D. H., & Lee, C. S. (2011). Perceptions, quality and motivational needs in image tagging human computation games. Journal of Information Science, 37(5), 515–531. </li> */}
+          {/*       <li>Lee, T. Y., Dugan, C., Geyer, W., Ratchford, T., Rasmussen, J., Shami, N. S., & Lupushor, S. (2013). Experiments on motivational feedback for crowdsourced workers. In Proceedings of the international aaai conference on web and social media (Vol. 7, pp. 341–350). </li> */}
+          {/*       <li>Massung, E., Coyle, D., Cater, K. F., Jay, M., & Preist, C. (2013, April). Using crowdsourcing to support pro-environmental community activism. In Proceedings of the SIGCHI Conference on human factors in Computing systems (pp. 371-380). </li> */}
+          {/*       <li>Mekler, E. D., Brühlmann, F., Opwis, K., & Tuch, A. N. (2013, October). Do points, levels and leaderboards harm intrinsic motivation? An empirical analysis of common gamification elements. In Proceedings of the First International Conference on gameful design, research, and applications (pp. 66-73). </li> */}
+          {/*       <li>Morschheuser, B., Maedche, A., & Walter, D. (2017, February). Designing cooperative gamification: Conceptualization and prototypical implementation. In Proceedings of the 2017 ACM Conference on Computer Supported Cooperative Work and Social Computing (pp. 2410-2421).</li> */}
+          {/*       <li>Liu, D., Li, X., & Santhanam, R. (2013). Digital games and beyond: What happens when players compete?. Mis Quarterly, 111-124.</li> */}
+          {/*       <li>Toda, A. M., Klock, A. C., Oliveira, W., Palomino, P. T., Rodrigues, L., Shi, L., ... & Cristea, A. I. (2019). Analysing gamification elements in educational environments using an existing Gamification taxonomy. Smart Learning Environments, 6(1), 1-14. </li> */}
+          {/*       <li>Toda, A. M., Oliveira, W., Klock, A. C., Palomino, P. T., Pimenta, M., Gasparini, I., ... & Cristea, A. I. (2019, July). A taxonomy of game elements for gamification in educational contexts: Proposal and evaluation. In 2019 IEEE 19th International Conference on Advanced Learning Technologies (ICALT) (Vol. 2161, pp. 84-88). IEEE. </li> */}
+          {/*       <li>Hassan, M. A., Habiba, U., Khalid, H., Shoaib, M., & Arshad, S. (2019). An adaptive feedback system to improve student performance based on collaborative behavior. Ieee Access, 7, 107171–107178. </li> */}
+          {/*       <li>Tekinbas, K. S., & Zimmerman, E. (2003). Rules of play: Game design fundamentals. MIT press. </li> */}
+          {/*       <li>Hallifax, S., Lavoué, E., & Serna, A. (2020, July). To tailor or not to tailor gamification? an analysis of the impact of tailored game elements on learners’ behaviours and motivation. In International Conference on Artificial Intelligence in Education (pp. 216-227). Springer, Cham. </li> */}
+          {/*       <li>Oliveira, W., Hamari, J., Shi, L., Toda, A. M., Rodrigues, L., Palomino, P. T., & Isotani, S. (2022). Tailored gamification in education: A literature review and future agenda. Education and Information Technologies, 1-34. </li> */}
+          {/*       <li>Bartle, R. (1996). Hearts, clubs, diamonds, spades: Players who suit MUDs. Journal of MUD research, 1(1), 19. </li> */}
+          {/*       <li>Ferro, L. S., Walz, S. P., & Greuter, S. (2013, September). Towards personalised, gamified systems: an investigation into game design, personality and player typologies. In Proceedings of The 9th Australasian Conference on Interactive Entertainment: Matters of Life and Death (pp. 1-6). </li> */}
+          {/*       <li>Denden, M., Tlili, A., Essalmi, F., & Jemni, M. (2017, October). Educational gamification based on personality. In 2017 IEEE/ACS 14th International Conference on Computer Systems and Applications (AICCSA) (pp. 1399-1405). IEEE.  </li> */}
+          {/*       <li>Schell, J. (2008). The Art of Game Design: A book of lenses. CRC press. </li> */}
+          {/*       <li>Walk, W., Görlich, D., & Barrett, M. (2017). Design, dynamics, experience (DDE): an advancement of the MDA framework for game design. In Game dynamics (pp. 27-45). Springer, Cham. </li> */}
+          {/*       <li>Suh, A., Cheung, C. M., Ahuja, M., & Wagner, C. (2017). Gamification in the workplace: The central role of the aesthetic experience. Journal of Management Information Systems, 34(1), 268-305. </li> */}
+          {/*   </ol> */}
+          {/* </div> */}
         </div>
       </div>
       <Footer />

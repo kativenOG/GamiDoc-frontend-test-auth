@@ -16,7 +16,7 @@ function Personalization({ personalization, setPersonalization }) {
         <IconButton aria-label="Example">
           <InfoOutlinedIcon sx={{ fontSize: 20 }} onClick={() => {
             Swal.fire({ title: 'Your changes have been saved in a Draft', icon: 'info' })
-            router.push("documentation#technology")
+            router.push("documentation#personalization")
           }} />
         </IconButton>
         Personalization

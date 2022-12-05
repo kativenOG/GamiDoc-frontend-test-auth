@@ -17,7 +17,7 @@ function Rules({
         <IconButton aria-label="Example">
           <InfoOutlinedIcon sx={{ fontSize: 20 }} onClick={() => {
             // Swal.fire({ title: 'Your changes have been saved in a Draft', icon: 'info' })
-            router.push("documentation#gamerules")
+            router.push("documentation#gamebehavior")
           }} />
         </IconButton>
         Rules
