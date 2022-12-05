@@ -5,7 +5,7 @@ import Step from "@mui/material/Step";
 import StepButton from "@mui/material/StepButton";
 import { useRouter } from "next/router";
 
-const steps = ["Context", "Technology", "Core", "Personalization", "Game"];
+const steps = ["Context", "Technology", "Core", "Dynamics", "Personalization", "Aestethics"];
 
 export default function Sidebar() {
   const router = useRouter();
@@ -25,10 +25,13 @@ export default function Sidebar() {
         router.push("#core");
         break;
       case 3:
-        router.push("#personalization");
+        router.push("#dynamics");
         break;
       case 4:
-        router.push("#game");
+        router.push("#personalization");
+        break;
+      case 5:
+        router.push("#aestethics");
         break;
       default:
       // code block
