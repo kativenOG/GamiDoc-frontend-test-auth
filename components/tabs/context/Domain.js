@@ -39,7 +39,7 @@ export default function Domain({
       </label>
       <h2 className=" mt-4  block text-gray-700  mb-2 ">
         The domain component collects the application domain in which the gamified solution will be used.
-        For the taxonomy of possible domains, we chose the list included in Koivisto & Hamari, 2019.
+        For the taxonomy of possible domains, we chose the list included in <span className="underline text-blue-400">Koivisto & Hamari, 2019.</span>
       </h2>
       <FormControl>
         <InputLabel>Domain</InputLabel>

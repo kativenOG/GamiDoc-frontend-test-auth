@@ -190,7 +190,7 @@ export default function CreatePDF({
           </Text>
         </View>
         <Image
-          src="/model.png"
+          src="/new_model.jpg"
           style={{
             alignContent: "center",
             alignItems: "center",
@@ -299,7 +299,8 @@ export default function CreatePDF({
             <Br /><Br />
             {/* Affordances, gamification elements*/}
             <Text style={{ fontFamily: "Sen-Bold", fontSize: 14 }}>Gamification Elements: </Text> In this gamified solution,<Text style={{ fontFamily: "Roboto-Italic", fontSize: 13 }}>{affordances.map((element) => { return (element.type + ", ") })}</Text> will be used as gamification elements.
-            Specifically:<Br />  <Text style={{ fontFamily: "Roboto-Italic", fontSize: 13 }}>{affordances.map((element) => { return (element.type + ": " + element.text) + ".\n" })}</Text>
+            Specifically:<Br />  <Text style={{ fontFamily: "Roboto-Italic", fontSize: 13 }}>{affordances.map((element) => { return (element.type + ": " + element.text) + ".\n" })}</Text> 
+            <Br /><Br />
             {/* Feedback*/}
             <Text style={{ fontFamily: "Sen-Bold", fontSize: 14 }}>Feedback: </Text>To provide information to the user, feedback with {timing} timing and with <Text style={{ fontFamily: "Roboto-Italic", fontSize: 13 }}>{context}</Text> content will be used. Specifically, <Text style={{ fontFamily: "Roboto-Italic", fontSize: 13 }}>{contextDescription}</Text>.
             <Br /><Br />
@@ -339,10 +340,8 @@ export default function CreatePDF({
     </Document >
   );
 
-
   return (
     <div className="w-1/2 flex items-center justify-end gap-2" >
-
       <BlobProvider
         document={<MyDoc />}
       >
@@ -362,9 +361,10 @@ export default function CreatePDF({
                 Download!
               </button>
             </>)
-        }
+          }
         }
       </BlobProvider>
     </div >
   );
 }
+
