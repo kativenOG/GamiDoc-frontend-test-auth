@@ -24,7 +24,7 @@ export default function Modality({
       <label className=" mt-4 block text-gray-700  font-bold mb-2">
         <IconButton aria-label="Example">
           <InfoOutlinedIcon sx={{ fontSize: 20 }} onClick={() => {
-            Swal.fire({ title: 'Your changes have been saved in a Draft', icon: 'info' })
+            // Swal.fire({ title: 'Your changes have been saved in a Draft', icon: 'info' })
             router.push("documentation#modality")
           }} />
         </IconButton>

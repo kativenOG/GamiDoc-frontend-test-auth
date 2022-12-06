@@ -32,8 +32,8 @@ export default function Sidebar() {
         router.push("#personalization");
         break;
       case 6:
-        router.push("#aestethics");
-        break;
+        router.push("#aesthetics");
+        break;        
       default:
     }
   };

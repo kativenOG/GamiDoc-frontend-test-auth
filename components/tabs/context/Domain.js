@@ -20,7 +20,6 @@ export default function Domain({
 }) {
   const router = useRouter();
 
-
   return (
     <>
       <h2 className="w-[60em] mt-4 block text-gray-700  mb-2 font-semibold">
@@ -32,6 +31,7 @@ export default function Domain({
         <IconButton aria-label="Example">
           <InfoOutlinedIcon sx={{ fontSize: 20 }} onClick={() => {
             // Swal.fire({ title: 'Your changes have been saved in a Draft', icon: 'info' })
+
             router.push("documentation#domain")
           }} />
         </IconButton>
@@ -39,7 +39,7 @@ export default function Domain({
       </label>
       <h2 className=" mt-4  block text-gray-700  mb-2 ">
         The domain component collects the application domain in which the gamified solution will be used.
-        For the taxonomy of possible domains, we chose the list included in <span className="underline text-blue-400">Koivisto & Hamari, 2019.</span>
+        For the taxonomy of possible domains, we chose the list included in <span className="underline text-blue-400 hover:text-blue-500" onClick={()=>{router.push("documentation#citation1")}}>Koivisto & Hamari, 2019.</span>
       </h2>
       <FormControl>
         <InputLabel>Domain</InputLabel>

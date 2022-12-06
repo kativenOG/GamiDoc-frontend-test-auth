@@ -30,7 +30,7 @@ export default function Feedback({
         {/* STRANO CHE FEEDBACK RIPORTI A TECHNOLOGY */}
         <IconButton aria-label="Example">
           <InfoOutlinedIcon sx={{ fontSize: 20 }} onClick={() => {
-            Swal.fire({ title: 'Your changes have been saved in a Draft', icon: 'info' })
+            // Swal.fire({ title: 'Your changes have been saved in a Draft', icon: 'info' })
             router.push("documentation#feedback")
           }} />
         </IconButton>

@@ -24,8 +24,8 @@ function Personalization({ personalization, setPersonalization }) {
       <h2 className="w-[60em] mt-4 block text-gray-700  mb-2 ">
         Several solutions in the gamification field suggest a personalization or adaptation 
         of the gamified solutions according to several individual differences and preferences <span className="underline text-blue-400">(Hallifax, Lavoúe, & Serna, 2020;
-        Oliveira et al., 2022)</span>, such as the player type <span className="underline text-blue-400">(Bartle, 1996; Ferro, Walz, and Greuter, 2013; Tondello et al., 2016), 
-        personality traits (Denden, Tlili, Essalmi, & Jemni, 2017)</span>, motivation and goal <span className="underline text-blue-400">(Tondello et al., 2018)</span>, and so forth. 
+        Oliveira et al., 2022)</span>, such as the player type <span className="underline text-blue-400">(Bartle, 1996; Ferro, Walz, and Greuter, 2013; Tondello et al., 2016)</span>, 
+        personality traits <span className="underline text-blue-400">(Denden, Tlili, Essalmi, & Jemni, 2017)</span>, motivation and goal <span className="underline text-blue-400">(Tondello et al., 2018)</span>, and so forth. 
         For this, we decided to add a part related to the selection of a personalization modality and a possible adaptation feature.
       </h2>
       <TextField

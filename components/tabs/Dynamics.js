@@ -14,7 +14,7 @@ function Dynamics({ dynamics, setDynamics }) {
         {/* STRANO CHE DYNAMICS RIPORTI A TECHNOLOGY */}
         <IconButton aria-label="Example">
           <InfoOutlinedIcon sx={{ fontSize: 20 }} onClick={() => {
-            Swal.fire({ title: 'Your changes have been saved in a Draft', icon: 'info' })
+            // Swal.fire({ title: 'Your changes have been saved in a Draft', icon: 'info' })
             router.push("documentation#dynamics")
           }} />
         </IconButton>
