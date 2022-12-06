@@ -59,11 +59,17 @@ export default function Documentation() {
                 array.push(
                   <p id={"citation"+(i+1)} 
                      className={(selected == (i+1)) ? 
-                                "shadow-md m-2 p-3 rounded-full font-bold bg-slate-300 text-blue-600" 
-                                : "m-2 p-3 rounded-full bg-slate-100 text-black" }
+                                "shadow-md m-2 p-3 rounded-full font-bold bg-slate-300 text-blue-600 flex flex-row gap-2 items-center" 
+                                : "m-2 p-3 rounded-full bg-slate-100 text-black flex flex-row gap-2 items-center" }
                      onClick={()=>{setSelected(i+1)}} 
                   >
-                    <span className="font-bold p-1 rounded-full bg-slate-400 text-white">{i+1}:</span> {biblio[i]}
+                      <span className={(selected == (i+1)) ? 
+                                        "font-bold p-1 rounded-full bg-slate-300 text-blue-600 ":
+                                        "font-semibold p-1 rounded-full bg-slate-400 text-white "
+                      }>
+                          {(i<10) ? " " + (i+1) + ": " : (i+1) + ":"}
+                      </span> 
+                      <p>{biblio[i]}</p>
                   </p>
                 )
               }
@@ -147,7 +153,7 @@ export default function Documentation() {
           </div>{" "}
           <div id="target" className="mt-3">
             <h1 className="font-bold text-lg">1.4 - Target </h1>
-            Several documents in the gamification field suggest that users’ individual differences and preferences are crucial for the success of gamified solutions <span className="underline text-blue-400 hover:text-blue-500" onClick={()=> {router.push("documentation#citation3"); setSelected(3)}}>(B. Kim, 2015;</span> <span className="underline text-blue-400 hover:text-blue-500" onClick={()=> {router.push("documentation#1"); setSelected(1)}}>Koivisto & Hamari, 2019;</span> <span className="underline text-blue-400 hover:text-blue-500" onClick={()=> {router.push("documentation#4"); setSelected(4)}}>Tondello et al., 2016;</span> <span className="underline text-blue-400 hover:text-blue-500" onClick={()=> {router.push("documentation#5"); setSelected(5)}}>Zahedi et al., 2021</span>). 
+            Several documents in the gamification field suggest that users’ individual differences and preferences are crucial for the success of gamified solutions <span className="underline text-blue-400 hover:text-blue-500" onClick={()=> {router.push("documentation#citation3"); setSelected(3)}}>(B. Kim, 2015;</span> <span className="underline text-blue-400 hover:text-blue-500" onClick={()=> {router.push("documentation#citation1"); setSelected(1)}}>Koivisto & Hamari, 2019;</span> <span className="underline text-blue-400 hover:text-blue-500" onClick={()=> {router.push("documentation#citation4"); setSelected(4)}}>Tondello et al., 2016;</span> <span className="underline text-blue-400 hover:text-blue-500" onClick={()=> {router.push("documentation#citation5"); setSelected(5)}}>Zahedi et al., 2021</span>). 
             The existing taxonomies take into account the personality traits or the possible user type. Thus, we decided to develop our taxonomy, following the possible users’ category. The target
             users component collects all the relevant data related to the users who will be involved in the use of the software (<bold className="font-bold">category</bold> and <bold className="font-bold">age ranges</bold>)
             The difficulty in the development of a possible exhaustive taxonomy could lead to explorative applications of gamified solutions for studying new categories.
@@ -165,7 +171,7 @@ export default function Documentation() {
           </div>{" "}
           <div id="modality" className="mt-3">
             <h1 className="font-bold text-xl">3 - Modality</h1>
-            This component is dedicated to the definition of the main modality included in the gamification software. Despite the scarcity of evidence on cooperative gamification, the few results in the literature show differences in cooperative and competitive modalities of gamification and that different game elements support the different modalities <span className="underline text-blue-400  hover:text-blue-500" onClick={()=> {router.push("documentation#citation7"); setSelected(7)}}>(Chen & Pu, 2014; Goh & Lee, 2011; </span><span className="underline text-blue-400  hover:text-blue-500" onClick={()=> {router.push("documentation#citation7"); setSelected(7)}}>T. Y. Lee et al., 2013; </span><span className="underline text-blue-400  hover:text-blue-500" onClick={()=> {router.push("documentation#citation11"); setSelected(11)}}>Massung, Coyle,
+            This component is dedicated to the definition of the main modality included in the gamification software. Despite the scarcity of evidence on cooperative gamification, the few results in the literature show differences in cooperative and competitive modalities of gamification and that different game elements support the different modalities <span className="underline text-blue-400  hover:text-blue-500" onClick={()=> {router.push("documentation#citation7"); setSelected(7)}}>(Chen & Pu, 2014; </span><span className="underline text-blue-400  hover:text-blue-500" onClick={()=> {router.push("documentation#citation9"); setSelected(9)}}>Goh & Lee, 2011; </span><span className="underline text-blue-400  hover:text-blue-500" onClick={()=> {router.push("documentation#citation10"); setSelected(10)}}>T. Y. Lee et al., 2013; </span><span className="underline text-blue-400  hover:text-blue-500" onClick={()=> {router.push("documentation#citation11"); setSelected(11)}}>Massung, Coyle,
             Cater, Jay, & Preist, 2013; </span><span className="underline text-blue-400  hover:text-blue-500" onClick={()=> {router.push("documentation#citation12"); setSelected(12)}}>Mekler, Br ̈uhlmann, Opwis, & Tuch, 2013; </span><span className="underline text-blue-400  hover:text-blue-500" onClick={()=> {router.push("documentation#citation13"); setSelected(13)}}>Morschheuser, Maedche, & Walter, 2017)</span>. In the identification of different gamification modalities, we decided to follow the distinction made by Morschheuser and colleagues <span className="underline text-blue-400  hover:text-blue-500" onClick={()=> {router.push("documentation#citation13"); setSelected(13)}}>(Morschheuser, Maedche, & Walter, 2017)</span> between <bold className="font-bold">(1) individual</bold>, <bold className="font-bold">(2) cooperative</bold>, <bold className="font-bold">(3) competitive</bold>, and <bold className="font-bold">(4) cooperative-competitive</bold> gamification features <span className="underline text-blue-400  hover:text-blue-500" onClick={()=> {router.push("documentation#citation14"); setSelected(14)}}>(see also Liu, Li, & Santhanam (2013))</span>, 
             with the last one referring to those elements which support users’ cooperation with their ingroup (i.e., team mates), and competition with the outgroup (i.e., team competition). 
             Therefore, based on the main modality included in the design, each gamified software will be divided into the same categories. 
