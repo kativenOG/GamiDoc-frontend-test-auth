@@ -2,7 +2,6 @@ import {useEffect, useState} from "react"
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import {useRouter} from "next/router";
-import dynamic from 'next/dynamic'
 import Image from "next/image";
 import Sidebar from "../components/Sidebar";
 import Head from "next/head";
@@ -40,19 +39,18 @@ const figure2 = ({ src, width, quality }) => {
   return `https://i.imgur.com/hRswSlN.png`;
 };
 
-export default function documentation() {
-
+export default function Documentation() {
   const router = useRouter()
   const [selected,setSelected] = useState(1)
   
-  useEffect(()=>{
-    const {select} = router.query
-    if (parseInt(select,10)){
-      setSelected(parseInt(select,10))
-    }else{
-      setSelected(1)
-    }
-  },[])
+  // useEffect(()=>{
+  //   const {select} = router.query
+  //   if (parseInt(select,10)){
+  //     setSelected(parseInt(select,10))
+  //   }else{
+  //     setSelected(1)
+  //   }
+  // },[])
 
   const biblio_jsx = 
           () => {
@@ -65,7 +63,7 @@ export default function documentation() {
                                 : "m-2 p-3 rounded-full bg-slate-100 text-black" }
                      onClick={()=>{setSelected(i+1)}} 
                   >
-                    <span classname="font-bold rounded-full bg-black text-white">{i+1}:</span> {biblio[i]}
+                    <span className="font-bold p-1 rounded-full bg-slate-400 text-white">{i+1}:</span> {biblio[i]}
                   </p>
                 )
               }
